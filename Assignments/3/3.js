@@ -12,14 +12,21 @@ if (firstSide == secondSide && firstSide == thirdSide) {
   document.getElementById('target').innerHTML = equilateral;
 }
 
-if (
-  firstSide == secondSide ||
-  firstSide == thirdSide ||
-  secondSide == thirdSide
-)
+if (firstSide === secondSide) {
   if (secondSide != thirdSide) {
     document.getElementById('target').innerHTML = isosceles;
   }
+}
+if (secondSide === thirdSide) {
+  if (thirdSide != firstSide) {
+    document.getElementById('target').innerHTML = isosceles;
+  }
+}
+if (thirdSide === firstSide) {
+  if (firstSide != secondSide) {
+    document.getElementById('target').innerHTML = isosceles;
+  }
+}
 
 if (firstSide != secondSide && firstSide != thirdSide) {
   if (secondSide != thirdSide) {
