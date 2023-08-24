@@ -1,6 +1,6 @@
 'use strict';
 
-/*const movies = [];
+const movies = [];
 
 let keepGoing = true;
 
@@ -10,15 +10,15 @@ while (keepGoing) {
   const movie = {title, rating};
   movies.push(movie);
   const keepGoing = confirm('Would you like to continue?');
-}*/
+}
 
-const movies = [
+/*const movies = [
   {title: 'Memento', rating: '4.2'},
   {title: 'Taxi Driver', rating: '4.1'},
   {title: 'Driver', rating: '4'},
   {title: 'Luokkakokous', rating: '0'},
   {title: 'Oppenheimer', rating: '4.8'},
-];
+];*/
 
 function sortMovies(a, b) {
   const compare = b.rating - a.rating;
