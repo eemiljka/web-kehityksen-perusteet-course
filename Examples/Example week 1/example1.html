@@ -35,6 +35,7 @@
         */
 
         * {
+          box-sizing: border-box;
         }
 
         body {
@@ -43,10 +44,11 @@
 
         .box {
             height: 100px;
-            width: 100px;
+            width: 20%;
             border: 1px solid black;
             color: aliceblue;
-            display: inline-block;
+            /*display: inline-block;*/
+            float: left;
         }
 
         #red { background-color: red;}
@@ -55,7 +57,24 @@
         #yellow { background-color: yellow; color: black;}
         #orange { background-color: orange;}
 
-        .clear { clear: both;}
+        .clear {
+          clear: both;
+        }
+
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+          }
+
+          nav {
+            background-color: blueviolet;
+          }
+
+          /*nav {
+            overflow: hidden;
+          }*/
+
 
         /* img */
         img {
@@ -100,25 +119,29 @@
           margin: 40px auto;
           padding: 20px;
           border: 2px dashed black;
-          width: 75%;
+          width: 50%;
         }
 
         .food-picture {
-          width: 100%;
+          width: 200px;
           height: auto;
+          float: left;
+          margin-right: 20px;
         }
 
     </style>
     </head>
 
 <body>
-    <nav class="navi">
+    <nav class="clearfix">
       <div class="box" id="red">Box 1</div>
     <div class="box" id="green">Box 2</div>
     <div class="box" id="blue">Box 3</div>
     <div class="box" id="yellow">Box 4</div>
     <div class="box" id="orange">Box 5</div>
     </nav>
+
+
 
 
     <!-- Float continues, clearing -->
