@@ -4,21 +4,16 @@ const movies = [];
 
 let keepGoing = true;
 
-while (keepGoing) {
+do {
   const title = prompt('Enter the title of the movie:');
   const rating = prompt('Enter the rating for the movie (1-5):');
   const movie = {title, rating};
   movies.push(movie);
-  const keepGoing = confirm('Would you like to continue?');
-}
-
-/*const movies = [
-  {title: 'Memento', rating: '4.2'},
-  {title: 'Taxi Driver', rating: '4.1'},
-  {title: 'Driver', rating: '4'},
-  {title: 'Luokkakokous', rating: '0'},
-  {title: 'Oppenheimer', rating: '4.8'},
-];*/
+  const confirmation = confirm('Would you like to continue?');
+  if (confirmation === false) {
+    keepGoing = false;
+  }
+} while (keepGoing);
 
 function sortMovies(a, b) {
   const compare = b.rating - a.rating;
