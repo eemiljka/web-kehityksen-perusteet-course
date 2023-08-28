@@ -1,10 +1,27 @@
+@font-face {
+  font-family: Oswald;
+  src: url("Oswald-ExtraLight.ttf");
+}
+
+* {
+  font-family: "Oswald";
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #161719;
+  height: 46.5px;
+  font-family: "Oswald";
 }
+
+.nav-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
 
 li {
   float: left;
@@ -16,8 +33,17 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #D36236;
 }
+
+.page-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
