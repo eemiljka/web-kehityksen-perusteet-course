@@ -42,9 +42,25 @@ li a:hover {
   background-color: #D36236;
 }
 
+.nav-item a:hover {
+  color: #161719;
+}
+
+li a:active {
+  background-color: #8b300c;
+}
+
+main {
+  position: relative;
+}
+
 .page-container {
   width: 75%;
   margin: 0 auto;
+}
+
+#content {
+  margin-bottom: 100px;
 }
 
 .content-container {
@@ -64,3 +80,17 @@ li a:hover {
   border-radius: 8px 8px 8px 8px;
 }
 
+.vegetables {
+  position: absolute;
+  bottom: 357px;
+  right: 250px;
+  width: 180px; /* Adjust width as needed */
+  height: auto; /* Automatically adjust height based on width */
+}
+
+footer {
+  background-color: #D36236;
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
