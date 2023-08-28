@@ -63,6 +63,7 @@ main {
   margin-bottom: 100px;
 }
 
+/* MAYBE CHANGE THE BACKGROUND TO SOMETHING COOLER LATER */
 .content-container {
   background-image: url('img/background-texture-1.png');
   background-size: cover;
