@@ -1,3 +1,5 @@
+'use strict';
+
 const restaurants = [
   {
     location: {type: 'Point', coordinates: [25.018456, 60.228982]},
@@ -771,3 +773,63 @@ const restaurants = [
 ];
 
 // your code here
+
+function calculateDistance(x1, y1, x2, y2) {
+  console.log(x1, x2, y1, y2);
+  const distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  return distance;
+}
+
+const options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+function success(pos) {
+  const crd = pos.coords;
+  const x1 = +crd.latitude;
+  const y1 = +crd.longitude;
+
+  restaurants.sort(function (a, b) {
+    const x2A = +a.location.coordinates[1];
+    const y2A = +a.location.coordinates[0];
+    const distanceA = calculateDistance(x1, y1, x2A, y2A);
+
+    const x2B = +b.location.coordinates[1];
+    const y2B = +b.location.coordinates[0];
+    const distanceB = calculateDistance(x1, y1, x2B, y2B);
+
+    return distanceA - distanceB;
+  });
+
+  const table = document.querySelector('table');
+
+  while (table.rows.length > 1) {
+    table.deleteRow(1);
+  }
+
+  restaurants.forEach(function (restaurant) {
+    const row = table.insertRow();
+    const nameCell = row.insertCell(0);
+    const addressCell = row.insertCell(1);
+
+    nameCell.textContent = restaurant.name;
+    addressCell.textContent = restaurant.address;
+
+    const x2 = +restaurant.location.coordinates[1];
+    const y2 = +restaurant.location.coordinates[0];
+    const distance = calculateDistance(x1, y1, x2, y2);
+
+    const distanceCell = row.insertCell(2);
+    distanceCell.textContent = distance.toFixed(2) + ' km';
+  });
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+navigator.geolocation.getCurrentPosition(success, error, options);
