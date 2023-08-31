@@ -23,14 +23,26 @@
 
   <dialog>
     <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
-    <h2 id="dialog_title" class="h2">Sign in here!</h2>
+    <h2 id="dialog_title" class="h2">Sign up here!</h2>
     <p id="dialog_description">
-      Please fill out this form to sign in.
+      Please fill this out to sign up.
     </p>
-    <input type="text" id="name" required minlength="4" name="name" size="48">
+
+    <form action="" class="myForm">
+    <label for="name">Enter your name: </label>
+    <input type="text" id="name" minlength="4" name="name" size="46" placeholder="Your name" required>
+
+    <label for="email">Enter your email: </label>
+    <input type="text" id="email" pattern=".@metropolia.fi" minlength="15" name="email" size="46" placeholder="Email" required>
+
+    <label for="pwd">Enter your password: </label>
+    <input type="text" id="pwd" pattern="pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" size="46" placeholder="Password" required>
+
+    </form>
+
     <div class="flex flex-space-between">
       <button id="close_dialog">Close</button>
-      <button id="confirm_dialog" class="cta">Sign in</button>
+      <button id="confirm_dialog" class="cta">Sign up</button>
     </div>
   </dialog>
 

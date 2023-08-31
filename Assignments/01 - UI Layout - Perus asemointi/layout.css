@@ -109,6 +109,23 @@ dialog p {
   color:#161719;
 }
 
+.myForm input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.myForm input:required {
+  background-color: rgb(237, 173, 116);
+}
+
+.myForm input:invalid {
+  background-color: #a65e42;
+}
+
+.myForm input:valid {
+  background-color: rgb(67, 165, 22);
+}
+
 /* Dialogin root muuttujat */
 
 :root {
