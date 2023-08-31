@@ -23,14 +23,14 @@
 
   <dialog>
     <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
-    <h2 id="dialog_title" class="h2">Use location services?</h2>
+    <h2 id="dialog_title" class="h2">Sign in here!</h2>
     <p id="dialog_description">
-      In order to give directional instructions, we kindly ask you to turn
-      on the location services.
+      Please fill out this form to sign in.
     </p>
+    <input type="text" id="name" required minlength="4" name="name" size="48">
     <div class="flex flex-space-between">
       <button id="close_dialog">Close</button>
-      <button id="confirm_dialog" class="cta">Confirm</button>
+      <button id="confirm_dialog" class="cta">Sign in</button>
     </div>
   </dialog>
 

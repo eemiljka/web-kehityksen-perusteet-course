@@ -7,6 +7,14 @@
   font-family: "Oswald";
 }
 
+body:has(dialog[open]) {
+  overflow-y: hidden;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(3px);
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -65,7 +73,7 @@ main {
 
 /* MAYBE CHANGE THE BACKGROUND TO SOMETHING COOLER LATER */
 .content-container {
-  background-image: url('img/background-texture-1.png');
+  background-image: url('img/background-texture-2.png');
   background-size: cover;
   padding: 20px;
   border-radius: 8px;
@@ -167,6 +175,7 @@ dialog img {
   max-width: 75%;
   margin: 1rem 0 auto 2rem;
 }
+
 
 .h1 {
   margin: 2rem 0 1rem;
