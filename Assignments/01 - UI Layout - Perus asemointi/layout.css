@@ -119,11 +119,11 @@ dialog p {
 }
 
 .myForm input:invalid {
-  background-color: #a65e42;
+  background-color: #e1a38a;
 }
 
 .myForm input:valid {
-  background-color: rgb(67, 165, 22);
+  background-color: rgb(162, 217, 137);
 }
 
 /* Dialogin root muuttujat */
