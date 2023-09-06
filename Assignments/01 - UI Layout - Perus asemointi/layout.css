@@ -110,20 +110,25 @@ dialog p {
 }
 
 .myForm input {
-  padding: 10px;
+  border-left: 10px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  padding: 7px;
   margin-bottom: 10px;
+  transition: border-left-color 2s;
 }
 
 .myForm input:required {
-  background-color: rgb(237, 173, 116);
+  background-color: rgb(243, 237, 232);
 }
 
 .myForm input:invalid {
-  background-color: #e1a38a;
+  border-left-color: #d22231;
 }
 
 .myForm input:valid {
-  background-color: rgb(162, 217, 137);
+  border-left-color: rgb(20, 223, 74);
 }
 
 /* Dialogin root muuttujat */
@@ -179,12 +184,11 @@ dialog {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 1.6rem;
   max-width: 400px;
-  background-color: #D36236;
   position: absolute;
   bottom: 50px;
   right: 0px;
-  width: 260px;
-  height: 460px;
+  width: 293px;
+  height: 651px;
 }
 
 dialog img {

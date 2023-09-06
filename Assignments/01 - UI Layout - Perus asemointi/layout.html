@@ -30,13 +30,13 @@
 
     <form action="" class="myForm">
     <label for="name">Enter your name: </label>
-    <input type="text" id="name" minlength="4" name="name" size="46" placeholder="Your name" required>
+    <input type="text" id="name" minlength="3" name="name" size="46" placeholder="Your name" required>
 
     <label for="email">Enter your email: </label>
-    <input type="text" id="email" pattern=".@metropolia.fi" minlength="15" name="email" size="46" placeholder="Email" required>
+    <input type="text" id="email" pattern="*@metropolia.fi" minlength="15" name="email" size="46" placeholder="Email" required>
 
     <label for="pwd">Enter your password: </label>
-    <input type="text" id="pwd" pattern="pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" size="46" placeholder="Password" required>
+    <input type="text" id="pwd" pattern="^(?=.*[A-Z]).{8,}$" name="password" size="46" placeholder="Password" required>
 
     </form>
 
