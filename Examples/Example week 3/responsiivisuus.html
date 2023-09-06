@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Mobile first (min) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  h1 {
+    color: aqua;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    width: 700px;
+    margin: auto;
+  }
+  h2 {
+    display: none;
+  }
+}
+
+/*@media only print and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  h1 {
+    font-size: 40px;
+  }
+}*/
+</style>
+</head>
+<body>
+  <main>
+    <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+    <h1>OTSIKKO h1 LOL</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aperiam, laboriosam nihil illo ipsum dolorum dolor cupiditate similique itaque, sint, eum minus id veritatis optio qui architecto. Eius, eum iure.</p>
+    <h2>OTSIKKO h2 lol</h2>
+  </main>
+</body>
+</html>
