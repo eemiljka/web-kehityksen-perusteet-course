@@ -98,6 +98,18 @@ main {
   height: auto;
 }
 
+/* NEW EDITS */
+@media only screen and (max-width: 600px) {
+  .food-picture {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+  }
+}
+
 footer {
   background-color: #D36236;
   height: 50px;
