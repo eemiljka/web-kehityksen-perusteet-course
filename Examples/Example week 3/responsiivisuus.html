@@ -3,8 +3,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+html {
+  background: url(bigphoto.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 body {
-  background-color: lightgreen;
+//  background-color: lightgreen;
 }
 
 h1 {
@@ -18,7 +28,7 @@ p {
 /* Mobile first (min) */
 @media only screen and (min-width: 600px) {
   body {
-    background-color: lightblue;
+//    background-color: lightblue;
   }
   h1 {
     font-size: 40px;
@@ -27,6 +37,8 @@ p {
     font-size: 20px;
   }
 }
+
+
 
 @media only screen and (min-width: 650px) and (max-width: 750px) {
   h1 {
@@ -38,10 +50,43 @@ p {
   main {
     width: 700px;
     margin: auto;
-  }
-  h2 {
+  }}
+  /*h2 {
     display: none;
   }
+}*/
+
+#bigphoto {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: block;
+}
+
+#smallerphoto {
+  width: 500px;
+  height: 200px;
+  object-fit: cover;
+  background-color: beige;
+}
+
+#taustakuva {
+  width: 50%;
+  height: 500px;
+  background-color: beige;
+  margin-bottom: 50px;
+  background-image: url('smiley.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width: 600px) {
+#taustakuva {
+  background-image: url('smaller2.png');
+}
+
 }
 
 /*@media only print and (max-width: 600px) {
@@ -52,14 +97,35 @@ p {
     font-size: 40px;
   }
 }*/
+
 </style>
 </head>
 <body>
   <main>
     <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
-    <h1>OTSIKKO h1 LOL</h1>
+    <h1>Object Fit</h1>
+
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aperiam, laboriosam nihil illo ipsum dolorum dolor cupiditate similique itaque, sint, eum minus id veritatis optio qui architecto. Eius, eum iure.</p>
     <h2>OTSIKKO h2 lol</h2>
   </main>
+  <h2>Max-width ja margin auto kuvalla</h2>
+  <img src="bigphoto.png" alt="bigphoto" id="bigphoto">
+
+  <h2>Object Fit</h2>
+  <img src="smaller.png" alt="smallerphoto" id="smallerphoto">
+
+  <h2>HTML picture-element</h2>
+
+  <picture>
+    <source srcset="img_smallflower.jpg" media="(max-width: 400px)">
+    <source srcset="img_flowers.jpg">
+    <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture>
+
+  <h2>Taustakuva</h2>
+  <div id="taustakuva"></div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt excepturi possimus libero nam harum perspiciatis natus corrupti? Voluptatibus dolores, possimus itaque similique ipsam doloremque error, voluptatem, illo commodi maiores ducimus?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque hic cum iste veniam, eaque id, possimus expedita temporibus doloribus officiis quaerat facere numquam doloremque, vero nihil nam ipsam illo. Facilis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sed architecto earum soluta ad quo nam in at porro blanditiis saepe, quod dicta? Beatae eveniet dolore cumque ratione corrupti velit.</p>
+
 </body>
 </html>

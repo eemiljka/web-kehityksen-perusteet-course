@@ -77,8 +77,21 @@ const success = async pos => {
       console.log(sodexoRestaurants);
       createTable(sodexoRestaurants);
     });
+
+    compassBtn.addEventListener('click', () => {
+      const compassRestaurants = restaurants.filter(
+        restaurant => restaurant.company === 'compass'
+      );
+      console.log(compassRestaurants);
+      createTable(compassRestaurants);
+    });
+
+    resetBtn.addEventListener('click', () => {
+      createTable(restaurants);
+    });
   } catch (error) {
-    alert(error.message);
+    modal.innerHTML(errorModal(error.message));
+    modal.showModal;
   }
 };
 
