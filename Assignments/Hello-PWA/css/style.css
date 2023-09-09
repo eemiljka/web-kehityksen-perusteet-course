@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Anton";
+  src: url('../Anton-Regular.ttf');
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Anton';
 }
 
 /* Make content area fill the entire browser window */
@@ -12,6 +17,16 @@ html,
   width: 100%;
 }
 
+html {
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
 /* Center the content in the browser window */
 .container {
   margin: auto;
@@ -21,3 +36,4 @@ html,
 .title {
   font-size: 3rem;
 }
+
