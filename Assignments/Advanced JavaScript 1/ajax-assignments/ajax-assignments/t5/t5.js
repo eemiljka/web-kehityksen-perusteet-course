@@ -80,7 +80,7 @@ const success = async pos => {
 
     compassBtn.addEventListener('click', () => {
       const compassRestaurants = restaurants.filter(
-        restaurant => restaurant.company === 'compass'
+        restaurant => restaurant.company === 'Compass Group'
       );
       console.log(compassRestaurants);
       createTable(compassRestaurants);
