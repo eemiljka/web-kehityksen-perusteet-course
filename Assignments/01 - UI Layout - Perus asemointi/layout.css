@@ -93,22 +93,36 @@ main {
 
 .vegetables {
   position: absolute;
-  bottom: 357px;
-  right: 250px;
+  top: 113px;
+  right: 162px;
   width: 180px;
   height: auto;
 }
 
-/* NEW EDITS */
 @media only screen and (max-width: 600px) {
   .food-picture {
     float: none;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     height: 200px;
     object-fit: cover;
     margin: auto;
 
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .vegetables {
+    width: 20%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .vegetables {
+    width: 10%;
+    max-width: 100%;
+    top: 160px;
   }
 }
 
