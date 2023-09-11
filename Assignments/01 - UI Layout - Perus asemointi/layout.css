@@ -75,10 +75,11 @@ main {
 .content-container {
   background-image: url('img/background-texture-2.png');
   background-size: cover;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   height: 350px;
   margin-top: 10px;
+  overflow: auto;
 }
 
 .food-picture {
@@ -106,6 +107,7 @@ main {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    margin: auto;
 
   }
 }
