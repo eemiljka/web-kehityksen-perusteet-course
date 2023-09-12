@@ -82,6 +82,7 @@ main {
   padding: 100px;
   height: 100px;
   margin-bottom: 10px;
+  border-radius: 0px 0px 8px 8px;
 }
 
 .page-container {
@@ -129,7 +130,9 @@ main {
     height: 200px;
     object-fit: cover;
     margin: auto;
-
+  }
+  .content-container p {
+    font-size: larger;
   }
 }
 
