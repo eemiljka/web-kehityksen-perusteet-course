@@ -21,7 +21,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #161719;
-  height: 46.5px;
+  height: auto; /*46.5*/
   font-family: "Oswald";
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.955);
 }
@@ -58,8 +58,30 @@ li a:active {
   background-color: #8b300c;
 }
 
+@media (max-width: 612px) {
+  li {
+    float: none;
+    width: 100%;
+  }
+
+  li a {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 main {
   position: relative;
+}
+
+.banner-container {
+  background-image: url('img/banner-1.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 .page-container {
@@ -93,7 +115,7 @@ main {
 
 .vegetables {
   position: absolute;
-  top: 113px;
+  top: 328px;
   right: 162px;
   width: 180px;
   height: auto;
@@ -111,18 +133,40 @@ main {
   }
 }
 
+@media only screen and (max-width: 1220px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 336px;
+  }
+}
+
+@media only screen and (max-width: 1012px) {
+  .vegetables {
+    top: 348px;
+    right: 128px;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .vegetables {
-    width: 20%;
+    width: 69px;
     max-width: 100%;
   }
 }
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 566px) {
   .vegetables {
-    width: 10%;
-    max-width: 100%;
-    top: 160px;
+    top: 354px;
+    right: 65px;
+  }
+}
+
+@media only screen and (max-width: 397px) {
+  .vegetables {
+    width: 50px;
+    top: 359px;
+    right: 39px;
   }
 }
 
