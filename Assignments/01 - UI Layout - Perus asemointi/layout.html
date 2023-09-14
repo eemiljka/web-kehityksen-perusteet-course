@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rafla</title>
   <link rel="stylesheet" href="layout.css">
   <script src="dialog.js" defer></script>
 </head>
@@ -19,9 +19,16 @@
 <main>
 <div class="page-container">
   <div class="banner-container">
-
+    <div id="banner-section">
+      <h1 id="banner-h1">Rafla</h1>
+      <h2 id="banner-h2">The Ideal Rafla</h2>
+      <p id="banner-p">Find out the best Rafla-menu - For you</p>
+      <div id="banner-link">
+        Menu
+      </div>
   </div>
-  <button id="open_dialog">Open Dialog</button>
+  </div>
+  <button id="open_dialog" class="dialog-button">Open Dialog</button>
 
   <dialog>
     <img src="https://native-dialog.surge.sh/location-service.svg" alt="Illustration of Location Services" />
@@ -43,7 +50,7 @@
     </form>
 
     <div class="flex flex-space-between">
-      <button id="close_dialog">Close</button>
+      <button id="close_dialog" class="dialog-button">Close</button>
       <button id="confirm_dialog" class="cta">Sign up</button>
     </div>
   </dialog>
