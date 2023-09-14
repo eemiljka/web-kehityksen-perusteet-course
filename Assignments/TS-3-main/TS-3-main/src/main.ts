@@ -50,11 +50,11 @@ const createTable = (restaurants) => {
   });
 };
 
-const error = (err) => {
+const error = (err: GeolocationPositionError) => {
   console.warn(`ERROR(${err.code}): ${err.message}`);
 };
 
-const success = async (pos) => {
+const success = async (pos: GeolocationPosition) => {
   try {
     const crd = pos.coords;
     const restaurants = await fetchData<Restaurant[]>(apiUrl + '/restaurants');
