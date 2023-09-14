@@ -34,7 +34,15 @@
 
         * {
           box-sizing: border-box;
+          font-family: -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          }
+
+        html {
+          font-size: 16px;
         }
+
 
         body {
           margin: 0;
@@ -115,7 +123,27 @@
           }
         }
 
-        /* relative and absolute positioning with blue */
+        /* //////////////////
+        EM FONT SIZE EXAMPLE
+        ////////////////////*/
+        .parent-em {
+          font-size: 16px;
+        }
+
+        .child-em {
+          font-size: 2em;
+        }
+
+        /* //////////////////
+        REM FONT SIZE EXAMPLE
+        ////////////////////*/
+        .parent-rem {
+          font-size: 30px;
+        }
+
+        .child-rem {
+          font-size: 3rem;
+        }
 
     </style>
     </head>
@@ -131,9 +159,36 @@
     <div class="sisältö">Lista ja muut</div>
     </div>
   </main>
-    <!-- Float continues, clearing -->
 
-    <h1>Heading 1</h1><h1>Heading 2</h1>
+  <h1>Heading 1</h1><h1>Heading 2</h1>
+
+<!--em -ESIMERKKI-->
+  <!--PARENT-->
+  <div class="parent-em">
+    <!--CHILD-->
+    <p class="child-em">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Blanditiis necessitatibus odit cupiditate modi non similique
+      facere ut impedit commodi. Ducimus fugiat explicabo veritatis
+      asperiores ab rem deserunt reiciendis eveniet mollitia!
+    </p>
+  </div>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Blanditiis necessitatibus odit cupiditate modi non similique
+    facere ut impedit commodi. Ducimus fugiat explicabo veritatis
+    asperiores ab rem deserunt reiciendis eveniet mollitia!
+  </p>
+
+  <div class="parent-rem">
+    <p class="child-rem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Blanditiis necessitatibus odit cupiditate modi non similique
+      facere ut impedit commodi. Ducimus fugiat explicabo veritatis
+      asperiores ab rem deserunt reiciendis eveniet mollitia!
+    </p>
+  </div>
 
     <!-- Responsive images and centering -->
 
