@@ -148,6 +148,37 @@ p a {
   margin-bottom: 100px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  display: flex; /* Use flexbox to control the layout */
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border-radius: 20px;
+  margin: 10px;
+  height: 3 00px;
+  position: relative;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.corner-image {
+  height: 150px;
+  width: auto;
+  margin-right: 10px; /* Add margin to separate the image from text */
+  border-radius: 20px;
+}
+
+.item-text {
+  flex-grow: 1; /* Allow text to take up all available space */
+  font-size: 20px;
+  max-width: 100%; /* Add maximum width to prevent text from overflowing */
+}
+
 /* MAYBE CHANGE THE BACKGROUND TO SOMETHING COOLER LATER */
 .content-container {
   background-image: url('img/background-texture-2.png');
@@ -170,7 +201,7 @@ p a {
 
 .vegetables {
   position: absolute;
-  top: 488px;
+  top: 1118px;
   right: 162px;
   width: 180px;
   height: auto;
@@ -190,6 +221,22 @@ p a {
   }
 }
 
+@media only screen and (max-width: 1332px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1156px;
+  }
+}
+
+@media only screen and (max-width: 1262px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1249px;
+  }
+}
+
 @media only screen and (max-width: 1220px) {
   .vegetables {
     width: 11%;
@@ -202,6 +249,17 @@ p a {
   .vegetables {
     top: 502px;
     right: 128px;
+  }
+  .corner-image {
+    height: 80px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1012px) {
+  .corner-image {
+    height: 50px;
+    width: auto;
   }
 }
 
@@ -218,6 +276,9 @@ p a {
   .vegetables {
     top: 508px;
     right: 65px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
 
