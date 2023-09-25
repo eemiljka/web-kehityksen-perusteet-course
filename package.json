@@ -111,6 +111,7 @@
     "prelude-ls": "^1.2.1",
     "prettier": "^3.0.2",
     "prettier-linter-helpers": "^1.0.0",
+    "prompt-sync": "^4.2.0",
     "punycode": "^2.3.0",
     "queue-microtask": "^1.2.3",
     "resolve-from": "^4.0.0",

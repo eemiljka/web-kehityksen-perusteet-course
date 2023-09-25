@@ -1,6 +1,6 @@
 import {errorModal, restaurantModal, restaurantRow} from './components';
 import {fetchData} from './functions';
-import { Restaurant } from './interfaces/Restaurant';
+import {Restaurant} from './interfaces/Restaurant';
 import {apiUrl, positionOptions} from './variables';
 
 const modal = document.querySelector('dialog');
@@ -35,7 +35,7 @@ const createTable = (restaurants) => {
         // fetch menu
         const menu = await fetchData(
           apiUrl + `/restaurants/daily/${restaurant._id}/fi`
-        );
+          );
         console.log(menu);
 
         const menuHtml = restaurantModal(restaurant, menu);
