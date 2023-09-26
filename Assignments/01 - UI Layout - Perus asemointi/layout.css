@@ -188,6 +188,13 @@ p a {
   height: 350px;
   margin-top: 10px;
   overflow: auto;
+  position: relative;
+}
+
+
+/* TEST */
+.inside-container {
+  position: relative;
 }
 
 .food-picture {
@@ -201,8 +208,10 @@ p a {
 
 .vegetables {
   position: absolute;
-  top: 1118px;
-  right: 162px;
+  top: 5px;
+  right: 4px;
+  /*top: 1118px;
+  right: 162px;*/
   width: 180px;
   height: auto;
 }
@@ -221,7 +230,7 @@ p a {
   }
 }
 
-@media only screen and (max-width: 1332px) {
+/*@media only screen and (max-width: 1332px) {
   .vegetables {
     width: 11%;
     max-width: 100%;
@@ -241,18 +250,77 @@ p a {
   .vegetables {
     width: 11%;
     max-width: 100%;
-    top: 500px;
+    top: 1339px;
   }
 }
 
-@media only screen and (max-width: 1012px) {
+@media only screen and (max-width: 1173px) {
   .vegetables {
-    top: 502px;
-    right: 128px;
+    width: 11%;
+    max-width: 100%;
+    top: 1379px;
   }
+}
+
+@media only screen and (max-width: 1169px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1441px;
+  }
+}
+
+@media only screen and (max-width: 1151px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1441px;
+  }
+}
+
+@media only screen and (max-width: 1144px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1561px;
+  }
+}
+
+@media only screen and (max-width: 1106px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1684px;
+  }
+}
+
+@media only screen and (max-width: 1058px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1857px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 2011px;
+  }
+}
+
+*/@media only screen and (max-width: 1012px) {
+  /*.vegetables {
+    top: 1172px;
+    right: 128px;
+  }*/
   .corner-image {
     height: 80px;
     width: auto;
+  }
+  .vegetables {
+    width: 100px;
   }
 }
 
@@ -263,32 +331,118 @@ p a {
   }
 }
 
+/*@media only screen and (max-width: 863px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1267px;
+  }
+}
+
+
+@media only screen and (max-width: 834px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1365px;
+  }
+}
+
+@media only screen and (max-width: 774px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1413px;
+  }
+}
+
+@media only screen and (max-width: 761px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1419px;
+  }
+}
+
+@media only screen and (max-width: 757px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1419px;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .vegetables {
+    width: 11%;
+    max-width: 100%;
+    top: 1606px;
+    right: 87px;
+  }
+}
+
+
 @media only screen and (max-width: 700px) {
   .vegetables {
     width: 69px;
     max-width: 100%;
-    top: 512px;
+    top: 1662px;
     right: 91px;
   }
 }
 
-@media only screen and (max-width: 566px) {
+@media only screen and (max-width: 673px) {
   .vegetables {
-    top: 508px;
-    right: 65px;
+    width: 69px;
+    max-width: 100%;
+    top: 1744px;
+    right: 91px;
   }
+}
+
+@media only screen and (max-width: 646px) {
+  .vegetables {
+    width: 69px;
+    max-width: 100%;
+    top: 1899px;
+    right: 91px;
+  }
+}
+
+@media only screen and (max-width: 624px) {
+  .vegetables {
+    width: 53px;
+    max-width: 100%;
+    top: 2076px;
+    right: 91px;
+  }
+}
+
+*/
+
+@media only screen and (max-width: 1012px) {
+  .vegetables {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  /*.vegetables {
+    top: 1647px;
+    right: 65px;
+  }*/
   .grid-container {
     grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 397px) {
+/*@media only screen and (max-width: 397px) {
   .vegetables {
     width: 50px;
     top: 515px;
     right: 39px;
   }
-}
+}*/
 
 footer {
   background-color: #D36236;
