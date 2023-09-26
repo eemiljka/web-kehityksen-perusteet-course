@@ -181,7 +181,7 @@ p a {
 
 /* MAYBE CHANGE THE BACKGROUND TO SOMETHING COOLER LATER */
 .content-container {
-  background-image: url('img/background-texture-2.png');
+  background-image: url('img/background-texture-6.png');
   background-size: cover;
   padding: 10px;
   border-radius: 8px;
@@ -191,6 +191,18 @@ p a {
   position: relative;
 }
 
+h1 span {
+  background-color: #ffffffcc;
+}
+
+h2 span {
+  background-color: #ffffffcc;
+}
+
+p span {
+  background-color: #ffffffcc;
+  font-size: 20px;
+}
 
 /* TEST */
 .inside-container {
