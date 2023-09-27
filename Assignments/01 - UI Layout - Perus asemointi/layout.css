@@ -191,7 +191,7 @@ p a {
   position: relative;
 }
 
-h1 span {
+/*h1 span {
   background-color: #ffffffcc;
 }
 
@@ -202,7 +202,7 @@ h2 span {
 p span {
   background-color: #ffffffcc;
   font-size: 20px;
-}
+}*/
 
 /* TEST */
 .inside-container {
