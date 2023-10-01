@@ -156,27 +156,27 @@ p a {
 }
 
 .grid-item {
-  display: flex; /* Use flexbox to control the layout */
+  display: flex;
   background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin: 10px;
   height: 3 00px;
   position: relative;
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px;
 }
 
 .corner-image {
   height: 150px;
   width: auto;
-  margin-right: 10px; /* Add margin to separate the image from text */
+  margin-right: 10px;
   border-radius: 20px;
 }
 
 .item-text {
-  flex-grow: 1; /* Allow text to take up all available space */
+  flex-grow: 1;
   font-size: 20px;
-  max-width: 100%; /* Add maximum width to prevent text from overflowing */
+  max-width: 100%;
 }
 
 /* MAYBE CHANGE THE BACKGROUND TO SOMETHING COOLER LATER */
@@ -189,6 +189,18 @@ p a {
   margin-top: 10px;
   overflow: auto;
   position: relative;
+}
+
+.content-container p {
+  color: #fff;
+}
+
+.content-container h1 {
+  color: #fff;
+}
+
+.content-container h2 {
+  color: #fff;
 }
 
 /*h1 span {
