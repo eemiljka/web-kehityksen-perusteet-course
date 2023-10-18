@@ -1,8 +1,61 @@
+@font-face {
+  font-family: "montserrat";
+  src: url('../Montserrat-Regular.ttf');
+}
+
+#content-container {
+  text-align: center;
+}
+
 body {
-  background-color: #f0f0f0;
-  font-family: sans-serif;
+  background-color: #F0F7F4;
+  font-family: "montserrat";
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: #3C493F;
+  color: #F0F7F4;
+}
+
+
+h1 h2 div {
+  color: #3C493F;
+}
+
+#sodexo {
+  background-color: #A2E3C4;
+  border-radius: 20px;
+  border: 0;
+  width: 70px;
+  height: 40px;
+}
+
+#compass {
+  background-color: #A2E3C4;
+  border-radius: 20px;
+  border: 0;
+  width: 120px;
+  height: 40px;
+}
+
+#reset {
+  background-color: #A2E3C4;
+  border-radius: 20px;
+  border: 0;
+  width: 80px;
+  height: 40px;
+}
+
+#darkmode {
+  background-color: #3C493F;
+  border-radius: 20px;
+  border: 0;
+  width: 140px;
+  height: 40px;
 }
 
 table {
@@ -27,5 +80,5 @@ td {
 
 .highlight {
   font-weight: bold;
-  background-color: rgb(194, 194, 235);
+  background-color: #7E8D85;
 }

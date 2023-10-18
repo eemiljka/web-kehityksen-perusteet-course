@@ -2,6 +2,13 @@ import {restaurantModal, restaurantRow} from './components.js';
 import {fetchData} from './functions.js';
 import {apiUrl, positionOptions} from './variables.js';
 
+const darkModeToggle = document.getElementById('darkmode');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
+
 const modal = document.querySelector('dialog');
 modal.addEventListener('click', () => {
   modal.close();
