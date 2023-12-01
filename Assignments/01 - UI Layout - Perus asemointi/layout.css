@@ -78,11 +78,15 @@ main {
   background-image: url('img/banner-1.png');
   background-size: cover;
   background-position: center;
-  color: white;
+  color: #636363;
   padding: 100px;
   height: 100px;
   margin-bottom: 10px;
   border-radius: 0px 0px 20px 20px;
+}
+
+#menu-link {
+  color: #593912;
 }
 
 p a {
@@ -196,11 +200,11 @@ p a {
 }
 
 .content-container h1 {
-  color: #fff;
+  color: #696969;
 }
 
 .content-container h2 {
-  color: #fff;
+  color: #4D4D4D;
 }
 
 /*h1 span {
@@ -521,7 +525,7 @@ button {
   border: none;
   /*letter-spacing: ccalc(3 * var(--leading, 0.025em));*/
   font-family: inherit;
-  color: var(--grey-color);
+  color: #454545;
   background-color: var(--light-color-bg);
   font-size: large;
   font-weight: 700;
