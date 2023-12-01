@@ -7,9 +7,9 @@
   font-family: "Oswald";
 }
 
-body:has(dialog[open]) {
+/*body:has(dialog[open]) {
   overflow-y: hidden;
-}
+}*/
 
 dialog::backdrop {
   backdrop-filter: blur(3px);
@@ -161,7 +161,7 @@ p a {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin: 10px;
-  height: 3 00px;
+  height: 300px;
   position: relative;
   padding: 10px;
 }
@@ -519,7 +519,7 @@ button {
   height: 44px;
   border-radius: calc(3px * var(--ratio));
   border: none;
-  letter-spacing: ccalc(3 * var(--leading, 0.025em));
+  /*letter-spacing: ccalc(3 * var(--leading, 0.025em));*/
   font-family: inherit;
   color: var(--grey-color);
   background-color: var(--light-color-bg);
